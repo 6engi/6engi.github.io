@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movimiento de un Robot</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #f4f4f4;
+        padding: 20px;
+      }
+      .robot {
+        width: 50px;
+        height: 50px;
+        background-color: blue;
+        position: relative;
+        top: 0;
+        left: 0;
+        animation: mover 4s infinite alternate ease-in-out;
+      }
+      @keyframes mover {
+        0% {
+          left: 0;
+        }
+        100% {
+          left: 80%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Movimiento de un Robot</h1>
+    <p>
+      Este ejemplo muestra cómo un robot puede moverse de un lado a otro
+      utilizando CSS.
+    </p>
+    <div class="robot"></div>
+  </body>
+</html>
